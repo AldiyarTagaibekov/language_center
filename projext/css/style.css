@@ -1,0 +1,254 @@
+body
+{
+    background: url('images/yellow_background.png');/*задний фон веб-страницы*/
+    font-family: 'Trebuchet MS', Arial, sans-serif; /*шрифт страницы*/
+    color: #181818; /*цвет текста*/
+}
+
+#main_wrapper /*айди*/
+{
+    width: 900px;/*ширина*/
+    margin: auto;/* внешний отступ*/
+}
+
+#leaf {
+        width: 150px;/*ширина*/
+        height: 150px;/*высота*/
+        border-radius: 67% 0;/*свойство,которое определяет скругление границы блока*/
+        background: #F3AC3C;/*задний фон*/
+        margin: 75px 0 75px 175px;/*внешний отступ*/
+        box-shadow:/*свойство,которое добавляет тень*/
+          -50px 0 #998235, 
+          -100px 0 #1A4341
+      }
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal; /*насыщенность шрифта*/
+    text-transform: uppercase;/*прописные буквы(верхный регистр) */
+}
+
+header
+{
+    background: url('images/line.png') repeat-x bottom; /*задний фон,который повторяется по горизонтали*/
+}
+
+#main_title
+{
+    display: inline-block; /*значение генерирует блочный элемент, который обтекается другими элементами веб-страницы  */
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif; /*шрифт с засечками*/
+    font-size: 2.5em; 
+    font-weight: normal;/*насыщенность шрифта*/
+}
+
+#logo, header h1
+{
+    display: inline-block;/*значение генерирует блочный элемент, который обтекается другими элементами веб-страницы */
+    margin-bottom: 0px; /*устанавливает внешний отступ снизу элемента*/
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px; /*устанавливает внешний отступ снизу сверху*/
+    font-weight: normal;
+}
+
+nav
+{
+    display: inline-block;/*значение генерирует блочный элемент, который обтекается другими элементами веб-страницы  */
+    width: 740px;
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none; /*устанавливает все свойства списка*/
+}
+
+nav li
+{
+    display: inline-block;/*значение генерирует блочный элемент, который обтекается другими элементами веб-страницы */
+    margin-right: 15px; /*отступ от правого края */
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px; ./*значение поля от нижнего края */
+    text-decoration: none;/*отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию.*/
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001; /*свойство позволяет одновременно установить толщину, стиль и цвет границы внизу элемента*/
+}
+
+
+#banner_image
+{
+    margin-top: 15px; /*отступ от верхгего края */
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    position: relative; /*положение элемента устанавливается относительно его исходного места.*/
+    box-shadow: 0px 4px 4px #1c1a19; /*свойство,которое добавляет тень*/
+    margin-bottom: 25px;
+}
+
+#banner_description
+{
+    position: absolute; /*указывает, что элемент абсолютно позиционирован*/
+    bottom: 0;/*Устанавливает положение нижнего края содержимого элемента без учета толщины рамок и отступов.*/
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px; /*значение поля от верхнего края содержимого элемента.*/ 
+    padding-left: 4px;
+    background-color: rgb(24,24,24); 
+    background-color: rgba(24,24,24,0.8); 
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+.red_button
+{
+    display: inline-block;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('images/red_background.png') repeat-x; /*фоновый рисунок повторяется только по горизонтали. */
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.red_button img
+{
+    border: 0;
+}
+article, aside
+{
+    display: inline-block;
+    vertical-align: top; /*выравнивание верхнего края элемента по верху самого высокого элемента строки.*/
+    text-align: justify; /*выравнивание по ширине, что означает одновременное выравнивание по левому и правому краю*/
+}
+
+article
+{
+    width: 625px;
+    margin-right: 15px;
+}
+
+.cat_icon
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    position: relative;
+    width: 235px;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#arrow
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#picture
+{
+    text-align: center;
+}
+
+#picture img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
+}
+
+
+footer
+{
+    background:  url('images/top.png') no-repeat top center, url('images/line.png') repeat-x top, url('images/shadow.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#my_pictures, 
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#ul
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    list-style-image: url('images/external_link.png');
+    padding-left: 2px;
+}
+
+#a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+
+footer div
+{
+    margin-top: 30px;
+    background: url('images/line.png') repeat-x top;
+}
+
